@@ -1,10 +1,13 @@
+import React from 'react';
+
 import Head from 'next/head';
 import { Navbar } from '../Navbar';
 
-
 import styles from './MainLayout.module.css';
 
-export const MainLayout = ({ children }) => {
+import { PropsWithChildren } from 'react';
+
+export const MainLayout = ({ children }: PropsWithChildren<unknown>) => {
     return (
         <div className={styles.container}>
           
